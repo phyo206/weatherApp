@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <title>Weather App</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
@@ -14,7 +16,7 @@
             <label for="city">Enter a location for weather</label>
             <input type="text" class="form-control p-4" name="city">
         </form>
-        <div class="card shadow-lg rounded">
+        <div class="card shadow-lg rounded d-none">
             <img src="https://via.placeholder.com/300x300" class="time card-img-top">
             <div class="icon mx-auto bg-light text-center"></div>
             <div class="details text-uppercase text-muted text-center">
